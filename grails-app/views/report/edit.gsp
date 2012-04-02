@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 	<head>
-		<meta name="layout" content="main">
+		<meta name="layout" content="cygnus-forms">
 		<g:set var="entityName" value="${message(code: 'report.label', default: 'Report')}" />
 		<title><g:message code="default.edit.label" args="[entityName]" /></title>
 	<g:external dir="js" file="report/reportEdit.js" type="js"/>

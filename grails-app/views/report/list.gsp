@@ -3,7 +3,7 @@
 <!doctype html>
 <html>
 	<head>
-		<meta name="layout" content="main">
+		<meta name="layout" content="cygnus-forms">
 		<g:set var="entityName" value="${message(code: 'report.label', default: 'Report')}" />
 		<title><g:message code="default.list.label" args="[entityName]" /></title>
 	</head>
@@ -11,7 +11,6 @@
 		<a href="#list-report" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
 		<div class="nav" role="navigation">
 			<ul>
-				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
 				<li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
 			</ul>
 		</div>
@@ -24,15 +23,15 @@
 				<thead>
 					<tr>
 					
-						<g:sortableColumn property="reportCode" title="${message(code: 'report.reportCode.label', default: 'Report Code')}" />
+						<g:sortableColumn property="reportCode"  params="${params} title="${message(code: 'report.reportCode.label', default: 'Report Code')}" />
 					
-						<g:sortableColumn property="reportFileName" title="${message(code: 'report.reportFileName.label', default: 'Report File Name')}" />
+						<g:sortableColumn property="reportFileName" params="${params} title="${message(code: 'report.reportFileName.label', default: 'Report File Name')}" />
 					
-						<g:sortableColumn property="reportControllerName" title="${message(code: 'report.reportControllerName.label', default: 'Report Controller Name')}" />
+						<g:sortableColumn property="reportControllerName" params="${params} title="${message(code: 'report.reportControllerName.label', default: 'Report Controller Name')}" />
 					
-						<th><g:message code="report.menuCode.label" default="Menu Code" /></th>
+						<th><g:message code="report.menuCode.label" params="${params} default="Menu Code" /></th>
 					
-						<g:sortableColumn property="reportName" title="${message(code: 'report.reportName.label', default: 'Report Name')}" />
+						<g:sortableColumn property="reportName" params="${params} title="${message(code: 'report.reportName.label', default: 'Report Name')}" />
 					
 					</tr>
 				</thead>

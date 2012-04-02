@@ -1,3 +1,7 @@
+import org.springframework.web.servlet.i18n.CookieLocaleResolver
+import org.springframework.web.servlet.i18n.LocaleChangeInterceptor
+import org.springframework.context.support.ReloadableResourceBundleMessageSource
+
 class CygnusReportManagementGrailsPlugin {
     // the plugin version
     def version = "0.1"
@@ -44,6 +48,8 @@ Brief summary/description of the plugin.
 
     def doWithSpring = {
         // TODO Implement runtime spring config (optional)
+		
+		
     }
 
     def doWithDynamicMethods = { ctx ->
