@@ -9,7 +9,7 @@ class Report {
 	String reportFileName
 	String reportControllerName
 	STMenu menuCode
-	
+	ThReportProperties reportProperties
     static constraints = {
 		reportCode unique:true
 		reportFileName unique:true
